@@ -341,7 +341,7 @@ var DBSYNC = {
                     if (counterNbTable === nbTables) {
                         //TODO set counterNbElm to info
                         self.syncResult.nbUpdated = counterNbElm;
-                        self._finishSync(serverData.syncDate, tx, callBack);
+                        self._finishSync(serverData.sync_date, tx, callBack);
                     }
                 });//end getExisting Id
             });//end forEach
