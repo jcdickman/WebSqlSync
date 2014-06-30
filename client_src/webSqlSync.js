@@ -414,7 +414,16 @@ var DBSYNC = {
     _selectSql: function(sql, optionalTransaction, callBack) {
         var self = this;
         self._executeSql(sql, [], optionalTransaction, function(tx, rs) {
-        callBack(self._transformRs(rs));
+        /**
+         * PersistenceJS already handles transforming the result set (rs)
+         * into a Javascript object so _transformRs() is not needed.
+         * We just send back the rs object wthout transforming it.
+         */
+
+        //callBack(self._transformRs(rs));
+
+        callBack(rs);
+
         }, self._errorHandler);
     },
     _transformRs: function(rs) {
