@@ -1,0 +1,12 @@
+{
+    "name": "WebSqlSyncTDK",
+    "main": "./client_src/webSqlSync.js",
+    "version": "0.0.1",
+    "_source" : "https://github.com/jcdickman/WebSqlSync.git",
+    "ignore" : [
+        "server_src",
+        "test",
+        "README.md",
+        "bower.json"
+    ]
+}
