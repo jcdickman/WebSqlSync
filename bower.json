@@ -1,7 +1,7 @@
 {
     "name": "WebSqlSyncTDK",
     "main": "./client_src/webSqlSync.js",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "_source" : "https://github.com/jcdickman/WebSqlSync.git",
     "ignore" : [
         "server_src",
